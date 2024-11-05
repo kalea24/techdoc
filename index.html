@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Innovix Gadgets - Product Landing Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header id="header">
-    <img id="header-img" src="assets/logo.png" alt="Innovix Gadgets Logo">
-    <nav id="nav-bar">
-      <a href="#features" class="nav-link">Features</a>
-      <a href="#how-it-works" class="nav-link">How It Works</a>
-      <a href="#pricing" class="nav-link">Pricing</a>
-      <a href="#video" class="nav-link">Product Video</a> 
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Getting_Started" class="nav-link">Getting Started</a>
+        <a href="#Core_Concepts" class="nav-link">Core Concepts</a>
+        <a href="#API_Reference" class="nav-link">API Reference</a>
+        <a href="#Examples" class="nav-link">Examples</a>
     </nav>
-  </header>
 
-  <main>
 
-    <section id="features" class="section">
-      <h2>Our Features</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Advanced Technology</h3>
-          <p>Our gadgets use the most cutting-edge technology to bring the future to you today.</p>
-        </div>
-        <div class="feature">
-          <h3>Futuristic Design</h3>
-          <p>Each product is designed with sleek, modern aesthetics that blend form and function.</p>
-        </div>
-        <div class="feature">
-          <h3>Eco-Friendly Materials</h3>
-          <p>We ensure our products are made with sustainable materials to protect the environment.</p>
-        </div>
-      </div>
-    </section>
+    <main id="main-doc">
+        
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>This documentation provides an overview of the project and its requirements.</p>
+            <p>You'll learn about the core structure, setup, and technical specifications.</p>
+            <code>console.log("Welcome to the Documentation");</code>
+            <ul>
+                <li>Project Overview</li>
+                <li>Technical Requirements</li>
+                <li>Code Examples</li>
+            </ul>
+        </section>
 
-    <section id="how-it-works" class="section">
-      <h2>How It Works</h2>
-      <p>Simply choose your preffered design, schedule a meeting with our architects, and experience the future delivered to your door.</p>
-    </section>
+        
+        <section id="Getting_Started" class="main-section">
+            <header>Getting Started</header>
+            <p>This section helps you set up the environment and start coding.</p>
+            <p>Follow these steps to get up and running with the project.</p>
+            <code>npm install</code>
+            <p>This command installs all necessary dependencies.</p>
+            <p>Use the following command to start the development server:</p>
+            <code>npm start</code>
+            <ul>
+                <li>Installation</li>
+                <li>Basic Setup</li>
+                <li>Running the App</li>
+            </ul>
+        </section>
 
-    <section id="pricing" class="section">
-      <h2>Pricing</h2>
-      <div class="pricing-grid">
-        <div class="price-item">
-          <h3>Contemporary Interior Design Style</h3>
-          <p class="price">ranges from Php90-150k</p>
-          <p>Contemporary homes usually have open floor plans and use a lot of natural light. The materials used are eco-friendly or recycled with a lot of focus on energy conservation. The colors used are usually neutral with a dash of vibrancy using a brightly-colored sofa or painting, etc. Most of the furniture used in a contemporary-styled home is from the present.</p>
-        </div>
-        <div class="price-item">
-          <h3>Art Moderne Interior Design</h3>
-          <p class="price">ranges from Php90-150k</p>
-          <p> this interior design style was all about bigger, bolder, and brassier. Furniture was designed with a swelling curve and other décor items were either pared or stripped down. Designers also refer to this interior design style as the American Modern or Modernist..</p>
-        </div>
-        <div class="price-item">
-          <h3>Mid-Century Interior Design</h3>
-          <p class="price">ranges from Php100-200k</p>
-          <p>This interior design style emphasized on vivid use of color; from the walls to the wall arts, to the artifacts. Everything was colorful in this era. Furniture was defined by crisp lines, and indoor plants were in plenty.</p>
-        </div>
-        <div class="price-item">
-          <h3>Minimalist Interior Design</h3>
-          <p class="price">ranges from Php90-150k</p>
-          <p>The style emphasizes minimalism in all aspects of interior design, from simple furnishing to neutral color palettes, to functional but not flamboyant accessories. Everything is streamlined, simple, and necessary. No excesses.</p>
-        </div>
-      </div>
-    </section>
+      
+        <section id="Core_Concepts" class="main-section">
+            <header>Core Concepts</header>
+            <p>Understanding core concepts is essential to mastering the framework.</p>
+            <p>This section introduces key principles and coding patterns.</p>
+            <code>function exampleFunction() { return true; }</code>
+            <p>These concepts are the foundation of the app’s functionality.</p>
+            <ul>
+                <li>Functions</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+            </ul>
+        </section>
 
-    <section id="video-section" class="section">
-      <h2>Product Demo Video</h2>
-      <video id="video" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
+        <section id="API_Reference" class="main-section">
+            <header>API Reference</header>
+            <p>This section provides a detailed API reference.</p>
+            <p>Use this as a quick lookup for all available functions and properties.</p>
+            <code>fetch('api/endpoint')</code>
+            <p>Example API call to retrieve data.</p>
+        </section>
 
-    <section id="newsletter" class="section">
-      <h2>Join Our Newsletter</h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <input type="submit" id="submit" value="Submit">
-      </form>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2024 Innoviacreates</p>
-  </footer>
+        <section id="Examples" class="main-section">
+            <header>Examples</header>
+            <p>Check out these code examples to get hands-on experience.</p>
+            <code>let x = 10;</code>
+            <p>Examples will help reinforce the concepts discussed.</p>
+            <ul>
+                <li>Basic Syntax</li>
+                <li>Functions and Methods</li>
+                <li>Conditional Statements</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>

@@ -1,177 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f5dddd;
-    color: #333;
-  }
-  
-  #header {
-    font-family: Montserrat;
-    font-weight: 100;
-    background-color: #3a4454;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  #header-img {
-    width: 100px;
-  }
-  
-  #nav-bar {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 100;
-    cursor: pointer;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-    transition: 1s;
-    font-weight: bold;
-  }
-  
-  main {
-    margin-top: 80px;
-    padding: 20px;
-  }
-  
-  .section {
-    font-family: Oxanium;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .feature-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .feature {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  background-color: #fcf4ec;
+  color: #510400;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #5d100a;
+  color: #f9fafb;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+#navbar header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f9fafb;
+}
+
+#navbar a {
+  color: #b0c7d1;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+#navbar a:hover {
+  color: #f9fafb;
+  font-weight: bold;
+}
+
+#main-doc {
+  margin-left: 240px;
+  padding: 30px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 30px;
+}
+
+.main-section header {
+  font-size: 1.5em;
+  color: #2f3e46;
+  margin-bottom: 10px;
+}
+
+.main-section p {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+code {
+  display: block;
+  background-color: #e9eef1;
+  color: #3c5a72;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
   }
 
-  .feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-family: Oxanium;
+  #main-doc {
+      margin-left: 0;
+      padding: 20px;
   }
-  
-  .feature p {
-    font-size: 1rem;
-    color: #640c0c;
-  }
-  
-  .pricing-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .price-item {
-    background-color: #c2b2b4;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-  }
-  
-  .price-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .price-item p {
-    font-size: 1.2rem;
-  }
-  .price p{
-    font-size: 1rem;
-    text-decoration: underline;
-  }
-  
-  #video-section {
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #video {
-    width: 80%;
-    height: auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-  
-  #name, #phone, #email {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #submit {
-    padding: 10px 20px;
-    background-color: #6b4e71;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #submit:hover {
-    background-color: #f5dddd;
-  }
-  
-  footer {
-    background-color: #3a4454;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .feature-grid, .pricing-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    form {
-      width: 100%;
-    }
-  
-    #name, #phone, #email {
-      width: 80%;
-    }
-  }
+}

@@ -5,13 +5,14 @@
   }
   
   body {
-    font-family: Oxanium, sans-serif;
-    background-color: #fcf4ec;
+    background-color: #f5dddd;
     color: #333;
   }
   
   #header {
-    background-color: #640c0c;
+    font-family: Montserrat;
+    font-weight: 100;
+    background-color: #3a4454;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -34,12 +35,14 @@
   .nav-link {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 100;
     cursor: pointer;
   }
   
   .nav-link:hover {
     text-decoration: underline;
+    transition: 1s;
+    font-weight: bold;
   }
   
   main {
@@ -48,6 +51,7 @@
   }
   
   .section {
+    font-family: Oxanium;
     padding: 50px 0;
     text-align: center;
   }
@@ -71,10 +75,11 @@
     padding: 20px;
     width: 300px;
   }
-  
+
   .feature h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: Oxanium;
   }
   
   .feature p {
@@ -89,7 +94,7 @@
   }
   
   .price-item {
-    background-color: #dbbea1ff;
+    background-color: #c2b2b4;
     border-radius: 10px;
     padding: 20px;
     width: 250px;
@@ -103,6 +108,10 @@
   
   .price-item p {
     font-size: 1.2rem;
+  }
+  .price p{
+    font-size: 1rem;
+    text-decoration: underline;
   }
   
   #video-section {
@@ -134,7 +143,7 @@
   
   #submit {
     padding: 10px 20px;
-    background-color: #340414;
+    background-color: #6b4e71;
     color: white;
     border: none;
     border-radius: 5px;
@@ -142,11 +151,11 @@
   }
   
   #submit:hover {
-    background-color: #cba090;
+    background-color: #f5dddd;
   }
   
   footer {
-    background-color: #640c0c;
+    background-color: #3a4454;
     color: white;
     text-align: center;
     padding: 20px;

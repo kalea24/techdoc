@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Oxanium, sans-serif;
+    background-color: #fcf4ec;
+    color: #333;
+  }
+  
+  #header {
+    background-color: #640c0c;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header-img {
+    width: 100px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    margin-top: 80px;
+    padding: 20px;
+  }
+  
+  .section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .feature {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #640c0c;
+  }
+  
+  .pricing-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .price-item {
+    background-color: #dbbea1ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .price-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .price-item p {
+    font-size: 1.2rem;
+  }
+  
+  #video-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #video {
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  #name, #phone, #email {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #submit {
+    padding: 10px 20px;
+    background-color: #340414;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #cba090;
+  }
+  
+  footer {
+    background-color: #640c0c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-grid, .pricing-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    #name, #phone, #email {
+      width: 80%;
+    }
+  }
